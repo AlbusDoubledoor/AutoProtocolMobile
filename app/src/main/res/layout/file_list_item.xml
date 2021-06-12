@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/protocol_file_item_background"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/layout_buttons"
+        android:layout_toStartOf="@id/layout_buttons"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_label__remove_file"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:rippleColor="@color/primary_button_ripple" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_label__send_file"
+            android:layout_below="@id/btn_remove"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:rippleColor="@color/primary_button_ripple" />
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_send"
+            android:text="@string/btn_label__choose_file"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:rippleColor="@color/primary_button_ripple" />
+    </RelativeLayout>
+
+</RelativeLayout>

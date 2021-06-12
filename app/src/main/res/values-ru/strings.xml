@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">АвтоПротокол</string>
+    <!-- Названия кнопок -->
+    <string name="btn_label__start">СТАРТ</string>
+    <string name="btn_label__event_configuration">КОНФИГУРАЦИЯ СОБЫТИЯ</string>
+    <string name="btn_label__point_configuration">КОНФИГУРАЦИЯ ТОЧКИ</string>
+    <string name="btn_label__view_protocols">Файлы протоколов</string>
+    <string name="btn_label__settings">НАСТРОЙКИ</string>
+    <string name="btn_label__exit">ВЫХОД</string>
+    <string name="btn_label__apply_settings">Применить</string>
+    <string name="btn_label__sync">Синхронизировать</string>
+    <string name="btn_label__start_event">НАЧАТЬ</string>
+    <string name="btn_label__fix_time">ВРЕМЯ</string>
+    <string name="btn_label__hide_time_point">Скрыть</string>
+    <string name="btn_label__add_time_point">⊕ Добавить метку</string>
+    <string name="btn_label__finish_event">ПРОДОЛЖИТЬ</string>
+    <string name="btn_label__remove_file">УДАЛИТЬ</string>
+    <string name="btn_label__send_file">ОТПРАВИТЬ</string>
+    <string name="btn_label__choose_file">ВЫБРАТЬ</string>
+    <string name="btn_label__create_event_configuration">Создать конфигурацию</string>
+    <string name="btn_label__apply_configuration">Применить</string>
+    <string name="btn_label__save_configuration">Сохранить</string>
+
+    <!-- Заголовки чекбоксов -->
+    <string name="chk_label__auto_sync">Автоматическая синхронизация</string>
+
+    <!-- Настройки темы -->
+    <string name="theme__day">День</string>
+    <string name="theme__night">Ночь</string>
+
+    <!-- Заголовки активностей -->
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_event_configuration">Конфигурация события</string>
+    <string name="title_activity_point_configuration">Конфигурация точки</string>
+    <string name="title_activity_sync">Синхронизация</string>
+    <string name="title_activity_view_protocols">Файлы протоколов</string>
+    <string name="title_activity_view_event_configurations">Файлы конфигурации события</string>
+
+    <!-- Заголовки настроек -->
+    <string name="pref_titles__lang">Язык</string>
+    <string name="pref_titles__theme">Тема</string>
+
+    <!-- Категории настроек -->
+    <string name="pref_category__general">Основные</string>
+
+    <!-- Элементы диалоговых окон (лейблы кнопок, сообщения, заголовки) -->
+    <string name="dlg_msg__exit_event">Покинуть текущее событие?</string>
+    <string name="dlg_msg__hide_time_point">Время и номер участника должны быть заполнены, иначе элемент будет удалён</string>
+    <string name="dlg_msg__finish_event">Завершить событие?</string>
+    <string name="dlg_msg__unready_event">Метки отсутствуют или присутствуют незаполненные метки</string>
+    <string name="dlg_msg__protocol_write_fail">Не удалось сохранить протокол. Попробуйте снова или завершите событие</string>
+    <string name="dlg_msg__conf_write_fail">Не удалость сохранить конфигурацию. Попробуй снова или измените параметры</string>
+    <string name="dlg_msg__conf_validation_fail">Не удалось провалидировать конфигурацию, подробности:\n</string>
+    <string name="dlg_msg__event_configuration_missing">Отсутствует конфигурация события</string>
+    <string name="dlg_msg__point_configuration_missing">Отсутствует конфигурация точки</string>
+    <string name="dlg_title__choose_protocol_file_name">Выберите название файла протокола</string>
+    <string name="dlg_title__choose_configuration_file_name">Выберите название файла конфигурации</string>
+    <string name="dlg_btn__save">Сохранить</string>
+    <string name="dlg_btn__finish">Завершить</string>
+    <string name="dlg_btn__close">Закрыть</string>
+    <string name="dlg_btn__delete">Удалить</string>
+    <string name="dlg_btn__exit">Выйти</string>
+    <string name="dlg_btn__abort">Отмена</string>
+
+    <!-- Текстовые подсказки -->
+    <string name="txt_hint__sync">Синхронизация займёт некоторое время</string>
+    <string name="txt_hint__sync_finished">Синхронизация завершена</string>
+    <string name="txt_hint__participant_number">НОМЕР</string>
+    <string name="txt_hint__file_name">ИМЯ ФАЙЛА</string>
+    <string name="txt_hint__list_files_placeholder">Файлы отсутствуют</string>
+
+    <!-- Intents -->
+    <string name="intent_subject__send_file">Отправка файла</string>
+    <string name="intent_text__send_file">АвтоПротокол</string>
+    <string name="intent_text__select_file">Выбрать файл</string>
+
+    <!-- Элементы меню -->
+    <string name="menu_item__load_from_device">Загрузить с устройства</string>
+    <string name="menu_item__load_from_previous">Загрузить из предыдущих</string>
+    <string name="menu_item__create_manually">Создать вручную</string>
+
+    <!-- Поля конфигурации события -->
+    <string name="event_configuration_field__event_name">Название события</string>
+    <string name="event_configuration_field__max_participant">Количество участников</string>
+    <string name="event_configuration_field__auto_sync_delay">Задержка автосинхронизации (мин)</string>
+    <string name="event_configuration_field__manual_sync_delay">Задержка ручной синхронизации (с)</string>
+    <string name="event_configuration_field__laps_count">Количество кругов</string>
+    <string name="event_configuration_field__checkpoints_count">Количество точек</string>
+
+    <!-- Поля конфигурации точки -->
+    <string name="point_configuration_field__point_identifier">Идентификатор точки</string>
+
+    <!-- Тосты -->
+    <string name="toast__apply_conf_fail">Не удалось применить конфигурацию, идентификатор должен быть числом</string>
+    <string name="toast__read_conf_fail">Не удалость прочитать конфигурацию</string>
+    <string name="toast__support_format">Формат файла не поддерживается. Расширение файла конфигурации: %s</string>
+</resources>

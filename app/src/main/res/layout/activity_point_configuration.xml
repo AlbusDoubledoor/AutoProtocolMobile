@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/POINT_CONFIGURATION_FIELD_POINT_IDENTIFIER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/point_configuration_field__point_identifier"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BTN__APPLY_CONFIGURATION"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/POINT_CONFIGURATION_FIELD_POINT_IDENTIFIER"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_label__apply_configuration"
+        android:textSize="18sp"
+        app:rippleColor="@color/primary_button_ripple" />
+
+</RelativeLayout>

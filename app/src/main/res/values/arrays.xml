@@ -1,0 +1,23 @@
+<resources>
+    <!-- Language Preference -->
+    <string-array name="lang_entries">
+        <item>Русский</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="lang_values">
+        <item>ru</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- Theme Preference -->
+    <string-array name="theme_entries">
+        <item>@string/theme__day</item>
+        <item>@string/theme__night</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>day</item>
+        <item>night</item>
+    </string-array>
+</resources>

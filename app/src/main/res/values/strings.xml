@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">AutoProtocol</string>
+
+    <!-- Button Labels -->
+    <string name="btn_label__start">START</string>
+    <string name="btn_label__event_configuration">EVENT CONFIGURATION</string>
+    <string name="btn_label__point_configuration">POINT CONFIGURATION</string>
+    <string name="btn_label__view_protocols">PROTOCOL FILES</string>
+    <string name="btn_label__settings">SETTINGS</string>
+    <string name="btn_label__exit">EXIT</string>
+    <string name="btn_label__apply_settings">Apply</string>
+    <string name="btn_label__sync">Synchronize</string>
+    <string name="btn_label__start_event">START</string>
+    <string name="btn_label__fix_time">TIME</string>
+    <string name="btn_label__hide_time_point">Hide</string>
+    <string name="btn_label__add_time_point">⊕ Add time point</string>
+    <string name="btn_label__finish_event">CONTINUE</string>
+    <string name="btn_label__remove_file">REMOVE</string>
+    <string name="btn_label__send_file">SEND</string>
+    <string name="btn_label__choose_file">CHOOSE</string>
+    <string name="btn_label__create_event_configuration">Create configuration</string>
+    <string name="btn_label__apply_configuration">Apply</string>
+    <string name="btn_label__save_configuration">Save</string>
+
+    <!-- Checkbox Labels -->
+    <string name="chk_label__auto_sync">Auto synchronize</string>
+
+    <!-- Theme Preferences -->
+    <string name="theme__day">Day</string>
+    <string name="theme__night">Night</string>
+    <!-- Activity Titles -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_event_configuration">Event configuration</string>
+    <string name="title_activity_point_configuration">Point configuration</string>
+    <string name="title_activity_sync">Synchronization</string>
+    <string name="title_activity_view_protocols">Protocol files</string>
+    <string name="title_activity_view_event_configurations">Event configurations files</string>
+
+    <!-- Sync Preferences -->
+    <string name="pref_titles__lang">Language</string>
+    <string name="pref_titles__theme">Theme</string>
+
+    <!-- Preference Keys -->
+    <string name="prefs__language" translatable="false">language</string>
+    <string name="prefs__theme" translatable="false">theme</string>
+
+    <!-- Preference Categories -->
+    <string name="pref_category__general">General</string>
+
+    <!-- Elements of dialog windows (button labels, messages, titles) -->
+    <string name="dlg_msg__exit_event">Exit current event?</string>
+    <string name="dlg_msg__hide_time_point">Time and participant should be filled, otherwise the element will be deleted</string>
+    <string name="dlg_msg__finish_event">Finish event?</string>
+    <string name="dlg_msg__unready_event">No time points or there is not ready time points</string>
+    <string name="dlg_msg__protocol_write_fail">Failed to write protocol. Try again or finish event</string>
+    <string name="dlg_msg__event_configuration_missing">Missing event configuration</string>
+    <string name="dlg_msg__point_configuration_missing">Missing point configuration</string>
+    <string name="dlg_msg__conf_write_fail">Failed to write event configuration. Try again or change params</string>
+    <string name="dlg_msg__conf_validation_fail">Configuration validation failed, details:\n</string>
+    <string name="dlg_title__choose_protocol_file_name">Choose a file name for protocol</string>
+    <string name="dlg_title__choose_configuration_file_name">Choose a file name for configuration</string>
+    <string name="dlg_btn__save">Save</string>
+    <string name="dlg_btn__finish">Finish</string>
+    <string name="dlg_btn__close">Close</string>
+    <string name="dlg_btn__delete">Delete</string>
+    <string name="dlg_btn__exit">Exit</string>
+    <string name="dlg_btn__abort">Abort</string>
+
+    <!-- Text hints -->
+    <string name="txt_hint__sync">Sync will take some time</string>
+    <string name="txt_hint__sync_finished">Sync is finished</string>
+    <string name="txt_hint__participant_number">NUMBER</string>
+    <string name="txt_hint__file_name">FILE NAME</string>
+    <string name="txt_hint__list_files_placeholder">Missing files</string>
+
+    <!-- Content descriptions -->
+    <string name="desc__sync_finished" translatable="false">Sync finished</string>
+    <string name="desc__stop_event" translatable="false">Stop event</string>
+
+    <!-- Intents -->
+    <string name="intent_subject__send_file">Sending file</string>
+    <string name="intent_text__send_file">AutoProtocol</string>
+    <string name="intent_text__select_file">Select file</string>
+
+    <!-- Menu items -->
+    <string name="menu_item__load_from_device">Load from device</string>
+    <string name="menu_item__load_from_previous">Load from previous</string>
+    <string name="menu_item__create_manually">Create manually</string>
+
+    <!-- Event configuration fields -->
+    <string name="event_configuration_field__event_name">Event name</string>
+    <string name="event_configuration_field__max_participant">Participants number</string>
+    <string name="event_configuration_field__auto_sync_delay">Auto sync delay (min)</string>
+    <string name="event_configuration_field__manual_sync_delay">Manual sync delay (s)</string>
+    <string name="event_configuration_field__laps_count">Laps count</string>
+    <string name="event_configuration_field__checkpoints_count">Checkpoints count</string>
+
+    <!-- Point configuration fields -->
+    <string name="point_configuration_field__point_identifier">Point identifier</string>
+
+    <!-- Toasts -->
+    <string name="toast__apply_conf_fail">Could not apply configuration, point id should be integer</string>
+    <string name="toast__read_conf_fail">Could not read configuration</string>
+    <string name="toast__support_format">File has unsupported format. Configuration file extension: %s</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <Button
+        android:id="@+id/BTN__START"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/btn_label__start"
+        android:textSize="22sp"
+        app:backgroundTint="@color/primary_button"
+        app:rippleColor="@color/primary_button_ripple" />
+
+    <Button
+        android:id="@+id/BTN__EVENT_CONFIGURATION"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/BTN__START"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_label__event_configuration"
+        android:textSize="18sp"
+        app:backgroundTint="@color/primary_button"
+        app:rippleColor="@color/primary_button_ripple" />
+
+    <Button
+        android:id="@+id/BTN__POINT_CONFIGURATION"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/BTN__EVENT_CONFIGURATION"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_label__point_configuration"
+        android:textSize="18sp"
+        app:backgroundTint="@color/primary_button"
+        app:rippleColor="@color/primary_button_ripple" />
+
+    <Button
+        android:id="@+id/BTN__VIEW_PROTOCOLS"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/BTN__POINT_CONFIGURATION"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_label__view_protocols"
+        android:textSize="18sp"
+        app:backgroundTint="@color/primary_button"
+        app:rippleColor="@color/primary_button_ripple" />
+
+    <Button
+        android:id="@+id/BTN__EXIT"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/BTN__VIEW_PROTOCOLS"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_label__exit"
+        android:textSize="22sp"
+        app:backgroundTint="@color/primary_button"
+        app:rippleColor="@color/primary_button_ripple" />
+</RelativeLayout>

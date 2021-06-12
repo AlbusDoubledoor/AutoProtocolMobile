@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/list_item_basic"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/time_owner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toStartOf="@id/btn_hide"
+        android:layout_toLeftOf="@id/btn_hide"
+        android:layout_toEndOf="@id/time"
+        android:layout_toRightOf="@id/time"
+        android:gravity="center_vertical"
+        android:hint="@string/txt_hint__participant_number"
+        android:inputType="textShortMessage"
+        android:imeOptions="actionDone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:text="@string/btn_label__hide_time_point"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16sp"
+        app:rippleColor="@color/primary_button_ripple" />
+
+</RelativeLayout>

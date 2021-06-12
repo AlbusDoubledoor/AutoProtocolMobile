@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProcessEventActivity">
+
+    <RelativeLayout
+        android:id="@+id/LAYOUT__CHRONO"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/TXT__VIEW_TIME"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chrono_background"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/BTN__STOP_TIME"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/desc__stop_event"
+            android:src="@drawable/icon_stop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LAYOUT__TIME_POINTS_PANEL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BTN__FIX_TIME"
+        android:layout_below="@id/LAYOUT__CHRONO">
+
+        <Button
+            android:id="@+id/BTN__ADD_TIME_POINT"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_label__add_time_point"
+            android:textSize="20sp"
+            app:rippleColor="@color/primary_button_ripple" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/LIST__TIME_POINTS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/BTN__ADD_TIME_POINT"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BTN__FIX_TIME"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:insetLeft="-8dp"
+        android:insetTop="0dp"
+        android:insetRight="-8dp"
+        android:insetBottom="-8dp"
+        android:text="@string/btn_label__fix_time"
+        android:textSize="32sp"
+        app:cornerRadius="0dp"
+        app:rippleColor="@color/primary_button_ripple"
+        app:strokeColor="?attr/colorPrimaryVariant"
+        app:strokeWidth="8dp" />
+
+    <Button
+        android:id="@+id/BTN__FINISH_EVENT"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:insetLeft="-8dp"
+        android:insetTop="0dp"
+        android:insetRight="-8dp"
+        android:insetBottom="-8dp"
+        android:text="@string/btn_label__finish_event"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:cornerRadius="0dp"
+        app:rippleColor="@color/primary_button_ripple"
+        app:strokeColor="?attr/colorPrimaryVariant"
+        app:strokeWidth="8dp" />
+</RelativeLayout>

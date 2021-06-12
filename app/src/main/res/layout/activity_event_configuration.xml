@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/BTN__LOAD_EVENT_CONFIGURATION"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:insetLeft="-8dp"
+        android:insetTop="-8dp"
+        android:insetRight="-8dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_label__create_event_configuration"
+        android:textSize="20sp"
+        app:cornerRadius="0dp"
+        app:rippleColor="@color/primary_button_ripple"
+        app:strokeColor="?attr/colorPrimaryVariant"
+        app:strokeWidth="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/LAYOUT__EVENT_CONFIGURATION_FIELDS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/BTN__LOAD_EVENT_CONFIGURATION"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical"
+        android:visibility="invisible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__EVENT_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__event_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__MAX_PARTICIPANT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__EVENT_NAME"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__max_participant"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__AUTO_SYNC_DELAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__MAX_PARTICIPANT"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__auto_sync_delay"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__MANUAL_SYNC_DELAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__AUTO_SYNC_DELAY"
+            android:layout_marginTop="10dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__manual_sync_delay"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__LAPS_COUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__MANUAL_SYNC_DELAY"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__laps_count"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EVENT_CONFIGURATION_FIELD__CHECKPOINTS_COUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__LAPS_COUNT"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_configuration_field__checkpoints_count"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EVENT_CONFIGURATION_FIELD__CHECKPOINTS_COUNT"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTN__APPLY_CONFIGURATION"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/btn_label__apply_configuration"
+                android:textSize="18sp"
+                app:rippleColor="@color/primary_button_ripple" />
+
+            <Button
+                android:id="@+id/BTN__SAVE_CONFIGURATION"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_label__save_configuration"
+                android:textSize="18sp"
+                app:rippleColor="@color/primary_button_ripple" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

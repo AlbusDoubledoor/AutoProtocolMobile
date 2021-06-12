@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/MENU_ITEM__LOAD_FROM_DEVICE"
+        android:title="@string/menu_item__load_from_device"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/MENU_ITEM__LOAD_FROM_PREVIOUS"
+        android:title="@string/menu_item__load_from_previous"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/MENU_ITEM__CREATE_MANUALLY"
+        android:title="@string/menu_item__create_manually"
+        app:showAsAction="withText" />
+</menu>

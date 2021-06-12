@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#ECE8F4</color>
+    <color name="gray_darker">#ACA8B4</color>
+    <color name="gray_dark">#817980</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_button">@color/black</color>
+    <color name="primary_button_disabled">@color/gray</color>
+    <color name="primary_button_ripple">@color/purple_700</color>"
+    <color name="list_item_basic">@color/gray</color>
+    <color name="list_item_stroke">@color/gray_darker</color>
+</resources>
